@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crane
       objectReference: {fileID: 0}
+    - target: {fileID: 1403896144462240346, guid: 34384200c907eae44b4fe8b872963b0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.238
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34384200c907eae44b4fe8b872963b0e, type: 3}
 --- !u!1 &227889132
@@ -860,14 +864,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.10854463, y: 0.698726, z: -0.10854465, w: 0.698726}
-  m_LocalPosition: {x: -5.884, y: 2.547, z: 0.5}
+  m_LocalRotation: {x: 0.042714108, y: 0.7058155, z: -0.042714167, w: 0.70581555}
+  m_LocalPosition: {x: -2.43, y: 0.64, z: 1.184}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 17.66, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 6.926, y: 90, z: 0}
 --- !u!1 &1125271433
 GameObject:
   m_ObjectHideFlags: 0
