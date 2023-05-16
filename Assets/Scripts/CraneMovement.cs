@@ -30,21 +30,20 @@ public class CraneMovement : MonoBehaviour
         }
 
         //get user input (wasd/arrow keys)
-        float inputX = Input.GetAxisRaw("Horizontal");
-        float inputZ = Input.GetAxisRaw("Vertical");
+        float inputSide = Input.GetAxisRaw("Horizontal");
+        float inputForward = Input.GetAxisRaw("Vertical");
 
-        if (inputX > 0)
+        if (inputSide > 0)
             rotateY = 1;
-        else if (inputX < 0)
+        else if (inputSide < 0)
             rotateY = -1;
 
-        if (inputZ > 0)
+        if (inputForward > 0)
             moveZ = 0.01f;
-        else if (inputZ < 0)
+        else if (inputForward < 0)
             moveZ = -0.01f;
 
         transform.Rotate(0,rotateY, 0);
         transform.Translate(0,motorShakeY,moveZ);  
     }
-
 }
