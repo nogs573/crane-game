@@ -1222,7 +1222,7 @@ GameObject:
   - component: {fileID: 1403896142934292114}
   m_Layer: 0
   m_Name: Pole
-  m_TagString: Untagged
+  m_TagString: Pole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1234,8 +1234,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403896142934292115}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.52682734, y: 1.9455457, z: 1.1875552}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3578277, y: 1.2145457, z: 1.730556}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1250,8 +1250,8 @@ Transform:
   - {fileID: 1403896142846673363}
   - {fileID: 1403896144255538145}
   - {fileID: 1403896144443775991}
-  m_Father: {fileID: 1403896144026310645}
-  m_RootOrder: 2
+  m_Father: {fileID: 5958230076419962765}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1403896142993637533
 GameObject:
@@ -2143,7 +2143,7 @@ GameObject:
   - component: {fileID: 1403896143212457494}
   m_Layer: 0
   m_Name: Hook
-  m_TagString: Untagged
+  m_TagString: Hook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2169,7 +2169,7 @@ Transform:
   - {fileID: 1403896144377171157}
   - {fileID: 1403896143535119725}
   m_Father: {fileID: 1403896144026310645}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1403896143279407130
 GameObject:
@@ -3232,7 +3232,7 @@ Transform:
   - {fileID: 1403896142692567811}
   - {fileID: 1403896143971785152}
   m_Father: {fileID: 1403896144026310645}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1403896143713610673
 GameObject:
@@ -4002,6 +4002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403896144026310645}
   - component: {fileID: 1403896144437113200}
+  - component: {fileID: 1727219726}
   m_Layer: 0
   m_Name: Crane
   m_TagString: Untagged
@@ -4023,9 +4024,9 @@ Transform:
   m_Children:
   - {fileID: 1403896143999178478}
   - {fileID: 1403896143428438738}
-  - {fileID: 1403896142934292114}
   - {fileID: 1403896143212457494}
   - {fileID: 1403896143645297343}
+  - {fileID: 5958230076419962765}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -4041,6 +4042,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ee089002d50a9f45870eafb531d7cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1727219726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403896144026310646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c010672161b33f4a9b845a832bb56f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poleTag: Pole
+  hookTag: Hook
+  rotationSpeed: 10
 --- !u!1 &1403896144060695302
 GameObject:
   m_ObjectHideFlags: 0
@@ -6001,3 +6017,35 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &6315338009419362155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5958230076419962765}
+  m_Layer: 0
+  m_Name: PolePivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5958230076419962765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315338009419362155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.169, y: 0.731, z: -0.543}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1403896142934292114}
+  m_Father: {fileID: 1403896144026310645}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
